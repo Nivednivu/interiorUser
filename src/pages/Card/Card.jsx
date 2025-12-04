@@ -170,7 +170,7 @@ function Card() {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const response = await axios.get('https://interiorserverfinal.onrender.com/api/products');
+        const response = await axios.get('https://interiorservermongo.onrender.com/api/products');
         setProducts(response.data.data);
         setError(null);
       } catch (err) {
