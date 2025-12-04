@@ -67,7 +67,7 @@ const Home = () => {
 
   const fetchFeaturedProducts = async () => {
     try {
-      const response = await axios.get('https://interiorserverfinal.onrender.com/api/products');
+      const response = await axios.get('https://interiorservermongo.onrender.com/api/products');
       setFeaturedProducts(response.data.data.slice(0, 6));
     } catch (error) {
       console.error('Error fetching products:', error);
